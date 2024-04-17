@@ -1,5 +1,6 @@
 main:
-  - title: "More about me"
-    url: /about/
   - title: "Resume"
-    url: https://raw.githubusercontent.com/hang-yin/portfolio/gh-pages/assets/YH-resume.pdf
+    url: /assets/Daniel Chen - Resume (2024.4.2).pdf
+  - title: "About Me"
+    url: /about/
+

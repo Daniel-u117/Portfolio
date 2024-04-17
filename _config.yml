@@ -13,18 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hang Yin
-email:
+title: Daniel's Personal Website
+email: daniel.chenchuyang@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  M.S. in Robotics Student
-twitter_username: username
-github_username: hang-yin
-minimal_mistakes_skin: dark # default
+  Daniel Chen personal website
+# twitter_username: 
+# github_username: 
+minimal_mistakes_skin: default # dark
 search: true
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -56,29 +58,40 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Hang Yin"
-  avatar : "/assets/images/bio-photo1.png"
-  bio    : "MS in Robotics @ Northwestern"
+  name   : "Daniel Chen"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : |
+    B.S. graduate in Physics at UCSB, concentrate in Mechanical Engineering and Robotics.
+    Skilled in robotics research, automated testing, and mechanical design.
   links:
-    - label: "Evanston, IL"
+    - label: "Sunnyvale, CA"
       icon: "fas fa-fw fa-map-marker-alt"
       url: ""
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/hang-yin"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: ""
     - label: "Email"
       icon: "fa fa-fw fa-envelope"
-      url: "mailto:hangyin2023@u.northwestern.edu"
+      url: "mailto:daniel.chenchuyang@gmail.com"
     - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/hangyin0226/"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/daniel-chen-u117/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/danielunu117/"
     
 
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/hang-yin"
+    - label: "Email"
+      icon: "fa fa-fw fa-envelope"
+      url: "mailto:daniel.chenchuyang@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/daniel-chen-u117/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/danielunu117/"
 
 defaults:
   # _posts
@@ -107,69 +120,9 @@ defaults:
       layout: single
       author_profile: false
       share: true
-  - scope:
-      path: ""
-      type: portfolio_manipulation
-    values:
-      layout: single
-      author_profile: false
-      share: true
-  - scope:
-      path: ""
-      type: portfolio_perception_nav
-    values:
-      layout: single
-      author_profile: false
-      share: true
-  - scope:
-      path: ""
-      type: portfolio_ML
-    values:
-      layout: single
-      author_profile: false
-      share: true
-  - scope:
-      path: ""
-      type: portfolio_mechatronics
-    values:
-      layout: single
-      author_profile: false
-      share: true
-  - scope:
-      path: ""
-      type: portfolio_web
-    values:
-      layout: single
-      author_profile: false
-      share: true
-  - scope:
-      path: ""
-      type: portfolio_other
-    values:
-      layout: single
-      author_profile: false
-      share: true
-
+  
 collections:
   portfolio:
-    output: true
-    permalink: /:collection/:path/
-  portfolio_manipulation:
-    output: true
-    permalink: /:collection/:path/
-  portfolio_perception_nav:
-    output: true
-    permalink: /:collection/:path/
-  portfolio_ML:
-    output: true
-    permalink: /:collection/:path/
-  portfolio_mechatronics:
-    output: true
-    permalink: /:collection/:path/
-  portfolio_web:
-    output: true
-    permalink: /:collection/:path/
-  portfolio_other:
     output: true
     permalink: /:collection/:path/
 
